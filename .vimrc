@@ -1,14 +1,17 @@
 set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Bundle 'gmarik/vundle'
-Bundle 'ervandew/supertab'
-Bundle 'tpope/vim-commentary'
-Bundle 'tpope/vim-surround'
-Bundle 'altercation/vim-colors-solarized'
-
-
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'ervandew/supertab'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-rails'
+Plugin 'kien/ctrlp.vim'
+Plugin 'vim-airline/vim-airline'
+call vundle#end()
 set backspace=2
 set incsearch
 set autowrite
@@ -20,7 +23,7 @@ syntax on
 set background=dark
 let g:solarized_termtrans=1
 colorscheme solarized
-
+let g:airline_powerline_fonts=1
 " Softtabs, 2 spaces
 set tabstop=2
 set shiftwidth=2
