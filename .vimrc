@@ -13,6 +13,7 @@ Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-rails'
 Plugin 'kien/ctrlp.vim'
 Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 call vundle#end()
 " end vundle stuff
 
@@ -48,7 +49,9 @@ colorscheme solarized
 " make current line number red
 hi cursorlinenr ctermfg=red
 " enable powerline font for statusline
+let g:airline_theme='solarized'
 let g:airline_powerline_fonts=1
+let g:airline#extensions#tabline#enabled = 1
 " Softtabs, 2 spaces
 set tabstop=2
 set shiftwidth=2
