@@ -52,6 +52,7 @@ hi cursorlinenr ctermfg=red
 let g:airline_theme='solarized'
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled = 1
+set t_Co=256
 " Softtabs, 2 spaces
 set tabstop=2
 set shiftwidth=2
@@ -90,3 +91,8 @@ if &term == 'xterm-256color' || &term == 'screen-256color'
   let &t_SI = "\<Esc>[5 q"
   let &t_EI = "\<Esc>[1 q"
 endif
+" better vim split
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
