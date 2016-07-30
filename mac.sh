@@ -54,7 +54,8 @@ brew cask install google-drive
 brew cask install alfred
 brew cask install jitouch
 brew cask install sublime-text
-brwe install vim
+brew install vim
+brew install tmux
 # sudo
 sudo brew cask install spectacle
 
