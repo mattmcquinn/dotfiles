@@ -14,6 +14,7 @@ Plugin 'tpope/vim-rails'
 Plugin 'kien/ctrlp.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'majutsushi/tagbar'
 call vundle#end()
 " end vundle stuff
 
@@ -96,3 +97,9 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+" set leader to ,
+:let mapleader = ","
+
+" map tagbar commands
+nnoremap <leader>b :TagbarToggle<CR>
