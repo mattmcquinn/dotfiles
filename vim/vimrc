@@ -11,15 +11,17 @@ Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-endwise'
 Plugin 'kien/ctrlp.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'majutsushi/tagbar'
+Plugin 'alvan/vim-closetag'
 call vundle#end()
 " end vundle stuff
 
 " reduce escape delay
-set timeoutlen=1000 ttimeoutlen=0
+set timeoutlen=1000 ttimeoutlen=10
 " show trailing whitespace
 set list listchars=tab:»·,trail:·,nbsp:·
 " show possible completions
@@ -99,7 +101,13 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 " set leader to ,
-:let mapleader = ","
+let mapleader = "\<Space>"
 
 " map tagbar commands
 nnoremap <leader>b :TagbarToggle<CR>
+
+" autoclose html tags
+let g:closetag_filenames = "*.html,*.html.erb"
+
+" quick save
+nnoremap <Leader>w :w<CR>
