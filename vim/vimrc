@@ -17,6 +17,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'majutsushi/tagbar'
 Plugin 'alvan/vim-closetag'
+Plugin 'mustache/vim-mustache-handlebars'
 call vundle#end()
 " end vundle stuff
 
@@ -111,3 +112,5 @@ let g:closetag_filenames = "*.html,*.html.erb"
 
 " quick save
 nnoremap <Leader>w :w<CR>
+
+let g:mustache_abbreviations = 1
